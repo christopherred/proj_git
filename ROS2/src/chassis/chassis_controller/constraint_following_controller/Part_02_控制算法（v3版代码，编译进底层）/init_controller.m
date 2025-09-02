@@ -1,0 +1,34 @@
+%% 清理缓存
+clc;
+clear;
+
+%% 加载自己的数据
+ %load("case2_path.mat");
+ %load("lmx.mat");
+ load("new2.mat");
+
+%% 根据数据集指定轨迹
+
+ %cfcontroller.x_design      = case2_path(:,1)*0.002;
+% cfcontroller.y_design      = case2_path(:,2)*0.002;
+ cfcontroller.x_design        = new2(:,1);
+ cfcontroller.y_design        = new2(:,2);
+ %cfcontroller.x_design        = lmx(:,1)*0.1;
+ %cfcontroller.y_design        = lmx(:,2)*0.1;
+
+ %cfcontroller.theta_design  = zeros([37,1]);
+%cfcontroller.theta_design = zeros([393,1]);
+%cfcontroller.theta_design  = lmx2(:,3);
+cfcontroller.theta_design  = zeros([200,1]);
+
+ %cfcontroller.tspan         = 0:2:72;
+cfcontroller.tspan       =0:0.5:99.5;
+ %cfcontroller.tspan       =0:0.25:106.75;
+
+ cfcontroller.sample_time   = 0.05;
+% cfcontroller.end_time      = cfcontroller.tspan(end);
+
+%% 初值
+cfcontroller.init_x        = cfcontroller.x_design(1);
+cfcontroller.init_y        = cfcontroller.y_design(1);
+cfcontroller.init_theta    = cfcontroller.theta_design(1);

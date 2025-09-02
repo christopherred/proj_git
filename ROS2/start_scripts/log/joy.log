@@ -1,0 +1,16 @@
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2025-06-10-17-06-02-945738-robot-50619
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [command_switcher_node-1]: process started with pid [50677]
+[INFO] [joy_node-2]: process started with pid [50679]
+[INFO] [joy_controller_node-3]: process started with pid [50681]
+[joy_node-2] [INFO] [1749546363.601661076] [joy_node]: No haptic (rumble) available, skipping initialization
+[joy_node-2] [INFO] [1749546363.601789680] [joy_node]: Opened joystick: BEITONG A1T2 BFM DONGLE.  deadzone: 0.010000
+[command_switcher_node-1] [0m[INFO] [1749546364.472317372] [command_switcher_node]: Initialized with stop[0m
+[command_switcher_node-1] [0m[INFO] [1749546372.802670237] [command_switcher_node]: Switched to joystick control[0m
+[command_switcher_node-1] [0m[INFO] [1749546372.831727063] [command_switcher_node]: Switched to joystick control[0m
+[command_switcher_node-1] [0m[INFO] [1749546372.931084691] [command_switcher_node]: Switched to joystick control[0m
+[command_switcher_node-1] [0m[INFO] [1749546373.174594799] [command_switcher_node]: Switched to auto control[0m
+[command_switcher_node-1] [0m[INFO] [1749546373.226045300] [command_switcher_node]: Switched to auto control[0m
+[command_switcher_node-1] [0m[INFO] [1749546377.660100516] [command_switcher_node]: Switched to joystick control[0m
+[command_switcher_node-1] [0m[INFO] [1749546377.692768752] [command_switcher_node]: Switched to joystick control[0m
+[command_switcher_node-1] [0m[INFO] [1749546377.818937198] [command_switcher_node]: Switched to joystick control[0m

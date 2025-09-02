@@ -1,0 +1,43 @@
+ekf_localization_node:
+    ros__parameters:
+        use_sim_time: false
+        clear_params: true
+        filter_type: "ekf"
+        frequency: 50.0
+        sensor_timeout: 0.5
+        two_d_mode: true
+        map_frame: map
+        # odom_frame: map
+        world_frame: map
+        base_link_frame: base_link
+        transform_time_offset: 0.009
+        transform_timeout: 0.5
+        print_diagnostics: true
+        publish_tf: false
+
+        use_control: true
+        control_config: [true, true, false, false, false, true]
+
+        # imu0: /sensors/imu/imu
+        # imu0_config: [false, false, false,
+        #               false, false, false,
+        #               false, false, false,
+        #               false, false, true,
+        #               false, false, false]
+        # imu0_differential: false
+        # imu0_relative: false
+        # imu0_remove_gravitational_acceleration: true
+        # imu0_queue_size: 20
+        # imu0_nodelay: true
+        # imu0_differential: true  # 对角速度使用差分模式
+
+
+        pose0: /cartographer/pose
+        pose0_config:  [true,  true,  false,
+                        false, false, true,
+                        false, false, false,
+                        false, false, false,
+                        false, false, false]
+
+
+

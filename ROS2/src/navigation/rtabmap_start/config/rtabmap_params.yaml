@@ -1,0 +1,61 @@
+
+rtabmap:
+  ros__parameters:
+    use_sim_time: false                 # 是否使用模拟时间（如 Gazebo 中的仿真时间）
+    frame_id: 'base_link' # 机器人底座的坐标框架 ID
+    #odom_frame_id: 'odom2'             # 里程计数据的坐标框架 ID，如果设置，则使用TF获取里程计数据，而不是从话题中获取
+    map_frame_id: 'map'                 # 地图数据的坐标框架 ID
+    #ground_truth_frame_id: 'map'        # 世界坐标框架
+    #initial_pose: '0 0 0.0003 0 0 3.14'
+    # 网格地图配置
+    Grid/3D: 'false'                    # 是否启用三维网格
+    Grid/Sensor: '0'                    # 传感器类型
+    Grid/RangeMax: '20'                 # 扫描范围
+    # 传感器订阅配置
+    subscribe_depth: true               # 是否订阅深度传感器数据
+    subscribe_rgb: true                 # 是否订阅 RGB 相机数据
+    subscribe_rgbd: true               # 是否订阅 RGB-D 数据
+    subscribe_scan: true                # 是否订阅激光雷达laserscan数据
+    approx_sync: true                   # 是否使用近似同步
+    subscribe_scan_cloud: false         # 是否订阅激光雷达点云数据
+    scan_cloud_is_2d : false            # 是否2D点云
+    subscribe_user_data: false          # 是否订阅用户数据
+    subscribe_odom_info: false          # 是否订阅额外里程计信息
+    subscribe_stereo: false             # 是否订阅立体相机数据
+    subscribe_odom: true                # 是否订阅里程计数据
+    # 位姿跟踪配置（ROS2 set to false to avoid TF conflicts）
+    pos_tracking_enabled: false                 # 是否启用位姿跟踪
+    publish_tf: false                           # 是否发布 `odom -> base_link` 的 TF
+    publish_map_tf: false                       # 是否发布 `map -> odom` 的 TF
+    # TF配置
+    tf_buffer_duration: 30.0            # TF 缓冲区时间
+    sync_queue_size: 100                     # 消息队列大小
+    tf_delay: 0.2                       # TF 延迟
+    tf_tolerance: 0.2                   # TF 容忍度
+    # RGB-D 里程计配置
+    rgbd_odometry: true               
+    RGBD/ProximityPathFilteringRadius: '1.0' # 近邻路径过滤半径
+    RGBD/ProximityPathMaxNeighbors: '10'     # 最大近邻数量
+    RGBD/LinearUpdate: '0.5'                 # 线性更新阈值
+    RGBD/AngularUpdate: '0.1'                # 角度更新阈值
+    RGBD/OptimizeFromGraphEnd: 'true'        # 从图的末端开始优化
+    RGBD/ProximityMaxGraphDepth: '50'        # 最大图深度
+    # 内存管理配置
+    # Mem/IncrementalMemory: 'false'           # 增量内存，非定位模式下，使用增量记忆来构建和扩展地图；定位模式下，不使用增量记忆
+    # Mem/InitWMWithAllNodes: 'true'           # 使用所有节点初始化工作记忆，定位模式下，启动时将所有节点加载到工作内存中；在非定位模式下，不会加载所有节点
+    Mem/STMSize: '30'                        # 短期记忆大小
+    Mem/LaserScanNormalK: '20'               # 激光扫描法线估计的 K 值
+    Mem/LaserScanVoxelSize: '0.05'           # 激光扫描体素大小
+    # 关键点检测配置
+    Vis/FeatureType: '6'
+    Kp/MaxFeatures: '-1'                     # 最大特征数量
+    Kp/DetectorStrategy: '6'                 # 检测策略，使用GFTT/ORB
+    # 配准策略
+    Reg/Strategy: '1'                         # 配准策略
+    # RTAB-Map 配置
+    Rtabmap/TimeThr: '700.0'                  # 时间阈值
+    Rtabmap/DetectionRate: '10'             # 检测率
+    Rtabmap/CreateIntermediateNodes: 'false'  # 是否创建中间节点
+    Rtabmap/PublishRAMUsage: 'false'           # 是否发布内存使用情况
+    Rtabmap/PublishRAMaps: 'true'             # 发布全局占据网格地图和点云地图
+    Rtabmap/PublishRAMapGrid: 'true'          # 发布局部占据网格地图

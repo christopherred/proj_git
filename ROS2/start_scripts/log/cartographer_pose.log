@@ -1,0 +1,7 @@
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2025-06-10-17-06-52-475819-robot-58236
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [tf_to_pose_node-1]: process started with pid [58364]
+[INFO] [ekf_node-2]: process started with pid [58366]
+[ekf_node-2] use_control is set to true, but acceleration_limits is missing. Will use default values.
+[tf_to_pose_node-1] [INFO] [1749546413.986831934] [tf_to_pose_node]: 等待从 map 到 base_link 的变换建立...
+[tf_to_pose_node-1] [INFO] [1749546413.987614370] [tf_to_pose_node]: TF转换到姿态节点已启动，将从 map 到 base_link 的TF转换为姿态，发布到话题: /cartographer/pose，频率: 10.0 Hz

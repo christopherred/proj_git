@@ -1,0 +1,14 @@
+cd /home/robot_code_v2/ROS2
+
+ros2 launch  sensors_driver          start.launch.py
+ros2 launch  omni_chassis_driver     actual.launch.py   use_global_controller:=true
+ros2 launch  joy_control             start.launch.py
+# ros2 launch nmea_navsat_driver nmea_serial_driver.launch.py
+
+ros2 launch  cartographer cartographer.launch.py
+ros2 launch  cartographer_pose cartographer_pose.launch.py
+
+
+# NO USE
+ros2 launch /home/robot_code/ros2_ws/src/sensors_driver/actual_sensors/realsense/launch/realsense.launch.py
+. /home/robot_code/ros2_ws/src/navigation/cladue.sh

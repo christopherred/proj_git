@@ -1,0 +1,25 @@
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2025-06-10-17-06-01-188654-robot-50565
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [omni_base_controller_global_actual_node-4]: process started with pid [50587]
+[INFO] [static_transform_publisher-1]: process started with pid [50581]
+[INFO] [static_transform_publisher-2]: process started with pid [50583]
+[INFO] [static_transform_publisher-3]: process started with pid [50585]
+[INFO] [omni_base_driver_node-5]: process started with pid [50589]
+[static_transform_publisher-1] [INFO] [1749546361.788741942] [static_transform_imu]: Spinning until stopped - publishing transform
+[static_transform_publisher-1] translation: ('0.000000', '0.000000', '0.000000')
+[static_transform_publisher-1] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-1] from 'base_link' to 'imu'
+[static_transform_publisher-3] [INFO] [1749546361.789215715] [static_transform_camera]: Spinning until stopped - publishing transform
+[static_transform_publisher-3] translation: ('0.175300', '0.000000', '0.000000')
+[static_transform_publisher-3] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-3] from 'base_link' to 'camera_link'
+[static_transform_publisher-2] [INFO] [1749546361.789218089] [static_transform_radar]: Spinning until stopped - publishing transform
+[static_transform_publisher-2] translation: ('0.000000', '0.131670', '0.000000')
+[static_transform_publisher-2] rotation: ('0.000000', '0.000000', '0.000000', '1.000000')
+[static_transform_publisher-2] from 'base_link' to 'radar'
+[omni_base_controller_global_actual_node-4] [0m[INFO] [1749546362.723653229] [omni_base_controller_global_actual_node]: Base controller started successfully[0m
+[omni_base_driver_node-5] [INFO] [1749546362.737413257] [base_driver]: Motor starting... port:/dev/omni_motor1,/dev/omni_motor2,/dev/omni_motor3 , baudrate:2000000
+[omni_base_driver_node-5] [INFO] [1749546362.839096839] [base_driver]: Open motor 1 succeeded!
+[omni_base_driver_node-5] [INFO] [1749546362.940560005] [base_driver]: Open motor 2 succeeded!
+[omni_base_driver_node-5] [INFO] [1749546363.042004084] [base_driver]: Open motor 3 succeeded!
+[omni_base_driver_node-5] [INFO] [1749546363.577102934] [omni_base_driver_node]: Motor control node started successfully!

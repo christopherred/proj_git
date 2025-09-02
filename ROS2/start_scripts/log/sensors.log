@@ -1,0 +1,32 @@
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2025-06-10-17-05-16-089016-robot-49039
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [ahrs_driver_node-1]: process started with pid [49120]
+[INFO] [sllidar_node-2]: process started with pid [49122]
+[sllidar_node-2] [INFO] [1749546317.166979483] [sllidar_node]: SLLidar running on ROS2 package SLLidar.ROS2 SDK Version:1.0.1, SLLIDAR SDK Version:2.1.0
+[sllidar_node-2] [INFO] [1749546317.173399511] [sllidar_node]: SLLidar S/N: 54AAECF8C4E699D5B8EB99F9D8754715
+[sllidar_node-2] [INFO] [1749546317.173429223] [sllidar_node]: Firmware Ver: 1.01
+[sllidar_node-2] [INFO] [1749546317.173437387] [sllidar_node]: Hardware Rev: 18
+[ahrs_driver_node-1] [INFO] [1749546317.174098398] [imu_driver_node]: Serial Port initialized
+[ahrs_driver_node-1] [INFO] [1749546317.174202400] [imu_driver_node]: Begin leveling
+[sllidar_node-2] [INFO] [1749546317.176343649] [sllidar_node]: SLLidar health status : 0
+[sllidar_node-2] [INFO] [1749546317.176361961] [sllidar_node]: SLLidar health status : OK.
+[sllidar_node-2] [INFO] [1749546317.476716627] [sllidar_node]: current scan mode: Standard, sample rate: 16 Khz, max_distance: 30.0 m, scan frequency:10.0 Hz, 
+[ahrs_driver_node-1] [INFO] [1749546319.184403258] [imu_driver_node]: Received response: q��u����)s9o��aD�=�����������?SeB���G?SeB��w
+[ahrs_driver_node-1] [INFO] [1749546320.194648522] [imu_driver_node]: Received response: *#OK
+[ahrs_driver_node-1] [INFO] [1749546321.204862922] [imu_driver_node]: Received response: *#OK
+[ahrs_driver_node-1] [WARN] [1749546324.210723067] [imu_driver_node]: IMU Timeout Once in Command [ #fimucal_acce ]
+[ahrs_driver_node-1] [INFO] [1749546324.220916859] [imu_driver_node]: Received response: *#OK
+[ahrs_driver_node-1] [INFO] [1749546325.231092803] [imu_driver_node]: Received response: *#OK
+[ahrs_driver_node-1] [WARN] [1749546328.236548053] [imu_driver_node]: IMU Timeout Once in Command [ #fimucal_gyro ]
+[ahrs_driver_node-1] [INFO] [1749546328.246776862] [imu_driver_node]: Received response: *#OK
+[ahrs_driver_node-1] [INFO] [1749546329.256954523] [imu_driver_node]: Received response: *#OK
+[ahrs_driver_node-1] [INFO] [1749546330.267199223] [imu_driver_node]: Received response: (y/n)
+[ahrs_driver_node-1] [INFO] [1749546331.277384644] [imu_driver_node]: Received response: *#OK
+[ahrs_driver_node-1] [INFO] [1749546331.277468976] [imu_driver_node]: End leveling success!
+[ahrs_driver_node-1] [INFO] [1749546331.277479860] [imu_driver_node]: ahrsBringup::processLoop: start
+[ahrs_driver_node-1] [WARN] [1749546333.084684016] [imu_driver_node]: check crc16 faild(imu).
+[ahrs_driver_node-1] [WARN] [1749546333.096570842] [imu_driver_node]: check crc16 faild(imu).
+[ahrs_driver_node-1] [WARN] [1749546333.107598134] [imu_driver_node]: check crc16 faild(imu).
+[ahrs_driver_node-1] [WARN] [1749546333.118596655] [imu_driver_node]: check crc16 faild(imu).
+[ahrs_driver_node-1] [WARN] [1749546337.576479234] [imu_driver_node]: check crc16 faild(ahrs).
+[ahrs_driver_node-1] [WARN] [1749546337.587603661] [imu_driver_node]: check crc16 faild(imu).
